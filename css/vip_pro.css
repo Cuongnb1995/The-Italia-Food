@@ -1,0 +1,211 @@
+:root {
+    --row-padding: 10px;
+    --box-shadow-0: 0 0.0625rem 0.125rem 0 rgb(0 0 0 / 10%);
+    --box-shadow-1: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    --box-shadow-2: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    --text-size-1: 13px;
+    --text-size-2: 14px;
+    --text-size-3: 16px;
+}
+
+.w3-row-padding>.w3-col {
+    padding: 0 var(--row-padding);
+}
+
+.w3-rest {overflow:hidden}
+
+.w3-stretch {margin-left:calc(var(--row-padding)*-1);margin-right:calc(var(--row-padding)*-1)}
+
+.w3-row:after,
+.w3-row:before,
+.w3-row-padding:after,
+.w3-row-padding:before 
+{content:"";display:table;clear:both}
+
+.w3-col {float:left;width:100%}
+
+.w3-col.s1 {width:8.33333%}
+.w3-col.s2 {width:16.66666%}
+.w3-col.s24 {width: 19.99999%}
+.w3-col.s3 {width:24.99999%}
+.w3-col.s4 {width:33.33333%}
+.w3-col.s5 {width:41.66666%}
+.w3-col.s6 {width:49.99999%}
+.w3-col.s7 {width:58.33333%}
+.w3-col.s8 {width:66.66666%}
+.w3-col.s9 {width:74.99999%}
+.w3-col.s10 {width:83.33333%}
+.w3-col.s11 {width:91.66666%}
+.w3-col.s12 {width:99.99999%}
+
+@media (min-width:601px) {
+    .w3-col.m1 {width:8.33333%}
+    .w3-col.m2 {width:16.66666%}
+    .w3-col.m24 {width: 19.99999%}
+    .w3-col.m3 {width:24.99999%}
+    .w3-col.m4 {width:33.33333%}
+    .w3-col.m5 {width:41.66666%}
+    .w3-col.m6 {width:49.99999%}
+    .w3-col.m7 {width:58.33333%}
+    .w3-col.m8 {width:66.66666%}
+    .w3-col.m9 {width:74.99999%}
+    .w3-col.m10 {width:83.33333%}
+    .w3-col.m11 {width:91.66666%}
+    .w3-col.m12 {width:99.99999%}
+}
+
+@media (min-width:993px) {
+    .w3-col.l1 {width:8.33333%}
+    .w3-col.l2 {width:16.66666%}
+    .w3-col.l24 {width: 19.99999%}
+    .w3-col.l3 {width:24.99999%}
+    .w3-col.l4 {width:33.33333%}
+    .w3-col.l5 {width:41.66666%}
+    .w3-col.l6 {width:49.99999%}
+    .w3-col.l7 {width:58.33333%}
+    .w3-col.l8 {width:66.66666%}
+    .w3-col.l9 {width:74.99999%}
+    .w3-col.l10 {width:83.33333%}
+    .w3-col.l11 {width:91.66666%}
+    .w3-col.l12 {width:99.99999%}
+}
+
+.w3-display-container{position:relative}
+.w3-display-topleft{position:absolute;left:0;top:0}
+.w3-display-topright{position:absolute;right:0;top:0}
+.w3-display-bottomleft{position:absolute;left:0;bottom:0}
+.w3-display-bottomright{position:absolute;right:0;bottom:0}
+.w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.w3-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.w3-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+
+.w3-opacity{opacity:0.60}
+.w3-opacity-off{opacity:1}
+.w3-opacity-max{opacity:0.25}
+.w3-opacity-min{opacity:0.75}
+
+.w3-greyscale-max{filter:grayscale(100%)}
+.w3-grayscale{filter:grayscale(75%)}
+.w3-greyscale-min{filter:grayscale(50%)}
+
+.w3-sepia{filter:sepia(75%)}
+.w3-sepia-max{filter:sepia(100%)}
+.w3-sepia-min{filter:sepia(50%)}
+
+.w3-spin{animation:w3-spin 2s infinite linear}@keyframes w3-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.w3-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.w3-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.w3-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.w3-animate-input{transition:width 0.4s ease-in-out}.w3-animate-input:focus{width:100%!important}
+
+/* //Check box custom */
+
+.the_tra {
+    position:relative
+}
+
+.custom_o_check label::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #aa9b77;
+    border-radius: 5px;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.custom_dau_tick input[type="checkbox"]:checked + label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 11px;
+    border-right: 3px solid #aa9b77;
+    border-bottom: 3px solid #aa9b77;
+    left: -20px;
+    top: 43%;
+    transform: rotate(45deg);
+}
+
+.coustom_border_khi_da_check input[type="checkbox"]:checked + label::before {
+    border: 3px solid #aa9b77;
+}
+.custom_lable_disable input[type="checkbox"]:disabled + label::before {
+    border: 3px solid #cccccc;
+    background-color: white;
+}
+
+
+/* Ky tu dac biet dua vao boreder */
+
+.mui_ten_sangphai::before {
+    content: "";
+    border: 6px solid;
+    border-color: transparent transparent transparent #d0011b;
+    position: absolute;
+    left: 2px;
+    top: 9px;
+    z-index: 1;
+}
+
+.duoi_hieu_ung_nhan_yeuthich:after {
+    content: "";
+    border: 3px solid;
+    border-color: rgb(145 49 19) rgb(145 49 19) transparent transparent;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+}
+
+.muitenhuonglen::before {
+    content: "";
+    border: 43px solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    position: absolute;
+    right: 0px;
+    top: -56px;
+}
+
+/* .1duoi_label_giam_gia */
+.abc::after {
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0px;
+    bottom: -8px;
+    position: absolute;
+    border-color: rgba(255,212,36,.9) rgba(255,212,36,.9) transparent;
+    border-style: solid;
+    border-width: 6px 20px;
+}
+
+/* Gạch ngang ở giữa class */
+.nav-box----li:not(:last-child)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1.4px solid hsla(0,0%,100%,.4);
+    height: 14px;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Dịch cả khổi lên 1px */
+.transitiontheme {
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.transitiontheme:hover {
+    transform: translateY(-1px);
+}

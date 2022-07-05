@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.063rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.header-background {
+    position: relative;
+}
+.header-navtop {
+    position:absolute;
+    left:0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.875rem 3.75rem 1.25rem 3.75rem;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.delivery-text {
+    text-transform: uppercase;
+    padding-right: 1.125rem;
+}
+.delivery-text-1 {
+    font-size: 1.063rem;
+    font-weight: 600;
+}
+
+.delivery-text-2 {
+    font-size: 1.813rem;
+    font-weight: bold;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    text-transform: uppercase;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    padding-right: 3.75rem;
+    color: black;
+}
+
+.img-spageti {
+    position: absolute;
+    bottom: -9.25rem;
+    left: -7.875rem;
+}
+
+.img-spageti img {
+    width: 18rem;
+    height: 18.75rem;
+}
+
+
+.order-box {
+    text-align: center;
+    text-transform: uppercase;
+    width: 750px;
+    position: absolute;
+    top: 30%;
+    left: 1.25rem;
+    z-index: 1;
+}
+.order-box__top-1 {
+    font-size: 50.68px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    padding-bottom: 10px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.order-box__top-2 {
+    font-size: 90.21px;
+    padding-bottom: 10px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.order-box__top-3 {
+    font-size: 26.62px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.order-box__top-4 {
+    border-bottom: 1px solid #ccb301;
+    width: 440px;
+    margin: 16px auto;
+}
+
+.order-box-month {
+    display: flex;
+    align-items: center;
+    font-size: 19.39px;
+    justify-content: center;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.order-box-month__02 {
+    font-size: 56.79px;
+    padding-left: 8px;
+}
+
+.order-box__btn {
+    margin: 26px 0;
+    padding: 14px 44px;
+    border: 1px solid black;
+    font-size: 1.05rem;
+    font-weight: bold;
+    background-color: transparent;
+}
+.order-box__btn:hover {
+    background-color: #f5ea9c9c;
+}
+
+.header-background {
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    overflow-x: hidden;
+}
+.order-product {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 90px;
+    font-size: 16.67px;
+}
+
+.order-product h2 {
+    font-size: 50px;
+    padding-bottom: 38px;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 500;
+}
+.order-product > p {
+    padding: 0px 220px;
+}
+.order-item {
+    margin-top: 55px;
+    padding: 0 40px;
+}
+.order-item img {
+    width: 318px;
+    height: 318px;
+}
+.order-item-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.order-product-background {
+    position: absolute;
+    width: 100%;
+    top: 378px;
+    background-color: #e8e6a9;
+    height: 140px;
+    z-index: -10;
+}
+
+.order-item h4 {
+    padding-top: 18px;
+    font-size: 20.83px;
+}
+
+.order-item p {
+    padding-top: 24px;
+    margin-bottom: 14px;
+    font-size: 16.67px;
+}
+
+.order-item button {
+    padding: 1.25rem 40px;
+    border: none;
+    background-color: #ffe001;
+    font-weight: bold;
+}
+
+.order-item button:hover {
+    background-color: #ccb301;
+}
+
+.order-item-content {
+    margin: 0 auto;
+    width: 336px;
+}
+
+.discover-box {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16.67px;
+}
+.discover-box-p1 {
+    font-size: 20.83px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.discover-box h2 {
+    font-size: 50px;
+    padding-bottom: 38px;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 500;
+}
+.discover-box > p {
+    padding: 0px 250px;
+}
+.discover-box {
+    margin-top: 90px;
+}
+.slider {
+    margin-top: 70px;
+    margin-bottom: 25px;
+}
+
+.slider img {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.slider-dot {
+    background-color: #d5d6d5;
+    border-radius: 50%;
+    padding: 0.3px 9.6px;
+    margin: 3.5px;
+}
+.slider-doted {
+    background-color: #fadc01;
+}
+.ad-box img {
+    width: 100%;
+}
+.ad-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+}
+.ad-box__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.reservation-box {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16.67px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.reservation-box-h4 {
+    font-size: 20.83px;
+    font-weight: bold;
+}
+.reservation-box h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: 500;
+}
+.reservation-box> p {
+    padding: 0px 250px;
+}
+
+.w3-row input {
+    width: 96%;
+    display: block;
+    padding: 18px;
+    margin: 8px;
+    border-radius: 2px;
+    border: 1px solid;
+}
+.reservation-box-input {
+    padding: 50px 300px;
+}
+
+.reservation-box-input button {
+    padding: 18.4px;
+    width: 96%;
+    border: none;
+    background-color: #ffe001;
+    font-weight: 600;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+.reservation-box-input button:hover {
+    background-color: #ccb301;
+}
+
+.footer {
+    background: url("../img/background/3759618.jpg") top center / cover no-repeat;
+    color: white;
+    padding: 60px 100px;
+}
+
+.footer-logo img {
+    fill: #fadc01;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+}
+.footer-info-p1 {
+    width: 38%;
+    text-align: justify;
+}
+
+.info__contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+.info__contact p {
+    padding: 4px 0;
+}
+.info__contact i {
+    width: 30px;
+    color: #fadc01;
+}
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.copyright i {
+    padding: 4px;
+}
